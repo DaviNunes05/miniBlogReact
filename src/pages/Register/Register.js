@@ -45,15 +45,15 @@ const Register = () => {
                     <input type="text" name="displayName" required placeholder="Nome do usuário" value={displayName} onChange={(e) => setDisplayName(e.target.value)} />
                 </label>
                 <label>
-                    <span>E-mail</span>
+                    <span>E-mail:</span>
                     <input type="email" name="email" required placeholder="E-mail do usuário" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </label>
                 <label>
-                    <span>Senha</span>
+                    <span>Senha:</span>
                     <input type="password" name="password" required placeholder="Insira sua senha" value={password} onChange={(e) => setPassword(e.target.value)} />
                 </label>
                 <label>
-                    <span>Confirmação de senha</span>
+                    <span>Confirmação de senha:</span>
                     <input type="password" name="confirmPassword" required placeholder="Confirme sua senha" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
                 </label>
                 {!loading && <button className="btn">Cadastrar</button>}
